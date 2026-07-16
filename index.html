@@ -1,21 +1,21 @@
-
-<!--generic base site, just to get a feel and the main structure down-->>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gavin Sim | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <h1>Gavin Sim</h1>
+        <nav class="navbar">
+            <a href="#intro" class="logo">Gavin Sim</a>
 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -27,104 +27,150 @@
 
     <main>
 
-        <section id="intro">
-            <h2>Hey, I'm Gavin.</h2>
+        <section id="intro" class="intro">
+            <div class="intro-content">
+                <p class="intro-label">Data Science Student</p>
 
-            <p>
-                I'm a Data Science student at Simon Fraser University who enjoys
-                building practical software and data projects. I like working on
-                problems that combine programming, machine learning, and data to
-                create something that's actually useful.
-            </p>
+                <h1>Hey, I'm Gavin.</h1>
 
-            <button>See My Projects</button>
+                <p class="intro-description">
+                    ...
+                </p>
+
+                <div class="intro-buttons">
+                    ...
+                </div>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hey, I'm Gavin. I'm a Data Science student at Simon Fraser University with a
-                passion for analytics and understanding how things work. I've always been
-                curious about finding patterns in data, asking why something happens, and
-                using those insights to make better informed decisions.
-            </p>
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="section-label">Who am I?</p>
+                <h2>About Me</h2>
+            </div>
 
-            <p>
-                It's easy to say that projects build my skill set, but to me they mean much
-                more than that. Every project is an opportunity to ask better questions,
-                solve meaningful problems, uncover hidden insights, and turn data into
-                recommendations that make a real impact.
-            </p>
+            <div class="about-content">
+                <p>
+                    Hey, I'm Gavin. I'm a Data Science student at Simon Fraser
+                    University with a passion for analytics and understanding how
+                    things work. I've always been curious about finding patterns in
+                    data, asking why something happens, and using those insights to
+                    make better-informed decisions.
+                </p>
 
-            <p>
-                Whether I'm analyzing datasets, building machine learning models, or
-                developing software, I'm always looking for opportunities to learn. I enjoy
-                taking on projects that challenge me to think differently, strengthen my
-                analytical skills, and not only deepening my understanding of the data behind 
-                them but the motivations that support them.
-            </p>
+                <p>
+                    It's easy to say that projects build my skill set, but to me they
+                    mean much more than that. Every project is an opportunity to ask
+                    better questions, solve meaningful problems, uncover hidden
+                    insights, and turn data into recommendations that make a real
+                    impact.
+                </p>
 
+                <p>
+                    Whether I'm analyzing datasets, building machine learning models,
+                    or developing software, I'm always looking for opportunities to
+                    learn. I enjoy taking on projects that challenge me to think
+                    differently, strengthen my analytical skills, and deepen my
+                    understanding of both the data and the motivations behind it.
+                </p>
+
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="section-label">Some stuff I've worked on.</p>
+                <h2>Projects</h2>
+            </div>
 
-            <article>
-                <h3>Project 1</h3>
-                <p>
-                    Project Description
-                </p>
-            </article>
+            <div class="project-grid">
 
-            <article>
-                <h3>Project 2</h3>
-                <p>
-                    Project Description
-                </p>
-            </article>
+                <article class="project-card">
+                    <div class="project-number">01</div>
 
-            <article>
-                <h3>Project 3</h3>
-                <p>
-                    Project Description
-                </p>
-            </article>
+                    <h3>Project 1</h3>
 
+                    <p>
+                        Description of Project 1
+                    </p>
+
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">02</div>
+
+                    <h3>Project 2</h3>
+
+                    <p>
+                        Description of Project 2
+                    </p>
+
+                </article>
+
+                <article class="project-card">
+                    <div class="project-number">03</div>
+
+                    <h3>Project 3</h3>
+
+                    <p>
+                        Description of Project 3
+                    </p>
+
+                </article>
+
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
+        <section id="skills" class="section">
+            <div class="section-heading">
+                <p class="section-label">Technical skills</p>
+                <h2>Skills</h2>
+            </div>
 
-            <ul>
+            <p class="skills-description">
+                I enjoy working with Python, R, and SQL to analyze and clean data, apply 
+                statistical methods, and build machine learning models. I'm especially
+                interested in machine learning and enjoy solving real-world problems through
+                data. I've also worked with Git and am always looking to learn new tech and 
+                grow my skills through projects and challenges.
+            </p>
+
+            <ul class="skills-list">
                 <li>Python</li>
                 <li>R</li>
                 <li>SQL</li>
-                <li>C++</li>
-                <li>JavaScript</li>
-                <li>Git</li>
                 <li>Machine Learning</li>
                 <li>Data Analysis</li>
-                
+                <li>Git</li>
+                <li>C++</li>
+                <li>JavaScript</li>
             </ul>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <section id="contact" class="section contact-section">
+            <div class="contact-content">
+                <p class="section-label">Contact Me</p>
 
-            <p>Email: gavinzsschool@gmail.com</p>
+                <a href="mailto:gavinzsschool@gmail.com" class="button primary-button">
+                    Send Me an Email
+                </a>
 
-            <p>GitHub: coming soon</p>
-
-            <p>LinkedIn: coming soon</p>
-
+                <div class="social-links">
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Gavin Sim</p>
+        <p>&copy; 2026 Gavin Sim. Built with HTML and CSS.</p>
     </footer>
 
 </body>
-
 </html>
+
+
+
+
